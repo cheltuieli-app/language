@@ -1,0 +1,59 @@
+<cheltuieli.app version="1.0" language="ro-RO" currency="RON">
+    <def name="yesterday" value="2022-12-31" />
+    <def name="today" value="2023-01-01" />
+    <def name="tomorrow" value="2023-01-02" />
+    <!-- /end of terminology -->
+    <article title="Cheltuieli">
+        MUST IGNORE: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Nam feugiat finibus sapien, vitae euismod mauris scelerisque et. 
+        Maecenas id ante laoreet ligula condimentum dignissim. 
+        Vestibulum tempor egestas nulla, at lobortis quam aliquet sit amet. 
+        Curabitur rhoncus imperdiet tortor sit amet pretium. Donec et tristique purus, faucibus posuere neque.
+        <p>
+            PLAIN TEXT #1 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nam feugiat finibus sapien, vitae euismod mauris scelerisque et. 
+            Maecenas id ante laoreet ligula condimentum dignissim. 
+            Vestibulum tempor egestas nulla, at lobortis quam aliquet sit amet. 
+            Curabitur rhoncus imperdiet tortor sit amet pretium. 
+            Donec et tristique purus, faucibus posuere neque.
+        </p>
+        <e type="venncode" value="{c = class, d ≤ 2023-01-31}" name="Ref. 1" />
+        <table value="Ref. 1" cols="ds" sort="d" />
+        <statement value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+        <p>
+            PLAIN TEXT #2 
+            Vestibulum tempor egestas nulla, at lobortis quam aliquet sit amet. 
+            Curabitur rhoncus imperdiet tortor sit amet pretium. Donec et tristique purus, faucibus posuere neque.
+        </p>
+        <statement action="https://cheltuieli.app/me?action">
+            STATEMENT #1
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nam feugiat finibus sapien, vitae euismod mauris scelerisque et. 
+            Maecenas id ante laoreet ligula condimentum dignissim.
+        </statement>
+        <e type="len" value="Ref. 1" />
+        <e type="sum" value="Ref. 1" />
+        <e type="max" value="Ref. 1" name="Ref. 2, Max value" />
+        <def type="exchange" name="Euro" value="1 RON = ? EUR" />
+        <def type="constant" name="custom val" value="1 May 2022" />
+        <def type="function" name="custom fun" value="s + s * 7%" />
+        <def type="function" name="multi-line">
+            s + 15% * s, d > octombrie 2022;
+            s + 20% * s, d > martie 2023;
+            s
+        </def>
+        <scenario value="..." />
+        <e type="inline" value="Ref. 1">
+            <table sort="s" cols="abcds" max="10" />
+            <diagram type="time" max="3" />
+        </e>
+        <p>
+            PLAIN TEXT #3 
+            Maecenas pellentesque odio dolor, sed consequat elit fringilla et. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+            Pellentesque eget quam neque. Nulla eget tempus arcu.
+        </p>
+    </article>
+    <article title="..." />
+</cheltuieli.app>
